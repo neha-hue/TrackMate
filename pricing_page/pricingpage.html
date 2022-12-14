@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+    <style>
+        * {
+            font-family: PTRootUIMedium, sans-serif;
+        }
+
+        #price_page_top {
+            background-color: rgba(128, 128, 128, 0.881);
+            text-align: center;
+            padding: 50px;
+        }
+
+        #price_page_top>h1 {
+            font-size: 60px;
+        }
+
+        .input_slider {
+            width: 400px;
+        }
+
+        #input_number{
+            width: 60px;
+            padding: 10px;
+            font-size: 25px;
+            color: black;
+        }
+
+        .price>span{
+            font-weight: bold;
+            font-size: 40px;
+            padding-top: 0px;
+        }
+
+        .price{
+            padding: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid blueviolet;
+            margin-top: 10px;
+        }
+        /* #input_number:hover{
+        } */
+
+        .plan_name{
+            margin: auto;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 50px;
+            border: 0px solid green;
+            padding: 10px;
+            margin-top: 10px;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .item_checkbox{
+            display: flex;
+            padding: 5px;
+        }
+
+        #plans{
+            display: flex;
+            width: 90%;
+            margin: auto;
+            justify-content: space-between;
+        }
+        #plans>div{
+            width: 30%;
+            border: 1px solid saddlebrown;
+        }
+
+        .price{
+            margin-top: 10px;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        .item_checkbox{
+            width: 80%;
+            margin: auto;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- <label><input data-id="138" type="checkbox" checked="">actual Siberian</label> -->
+
+    <div id="price_page">
+        <!-- create a div which displays top part of the price page -->
+        <div id="price_page_top">
+            <h1>Pricing</h1>
+            <p style="font-weight: bold; font-size: 20px;">All plans include free 30-day trial. No credit card required!
+            </p>
+        </div>
+
+        <!-- create toggle part of annual and monthly subscription plan -->
+        <div id="plan_type">
+            <div id="plan_monthly">
+            </div>
+            <div id="team_size">
+                <label for="teamsize_number">Team Size</label>
+                <input type="number" id="input_number" value="1" min="1" max="200">
+                <input type="range" class="input_slider" value="1" min="1" max="200" step="1">
+            </div>
+        </div>
+
+        <!-- have to create a div which contains 3 small divs and have all the data in it 
+
+        each small div should have a input tag(checkbox) and label tag -->
+
+        <div id="plans">
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    //document.querySelector("input").removeAttribute("checked", "");
+    let input_number = document.querySelector("#input_number");
+    let input_slider = document.querySelector(".input_slider");
+    input_number.addEventListener('change', (e) => {
+            //log.textContent = e.target.value;
+            input_slider.value = e.target.value;
+    });
+
+    input_slider.addEventListener('change', (e) => {
+
+            //log.textContent = e.target.value;
+            input_number.value = e.target.value;
+    });        
+
+
+    //add elements in business div
+    let business_details = {
+    "options" :   {
+  "Time tracking": true,
+  "Unlimited_prjects": true,
+  "Reporting": true,
+  "Timer_button": true,
+  "calendar integrations: google, outlook": true,
+  "billable_rates": true,
+  "budget_project": true,
+  "Invocing": true,
+  "task_management": true,
+  "activity_levels": true,
+  "apps_sites": true,
+  "screenshots": true,
+  "client_logins": true,
+  "paid_timeoff_tracking": true,
+  "payroll_employees": true,
+  "time_track_permissions": true,
+  "time_sync_jira": true,
+  "time_sync_gitlab": true,
+  "time_off_calender": true,
+  "work_schedule": true,
+  "team_personal_dashboard": false,
+ },
+ "id": 1,
+ "price" : 7,
+"plan_name" : "Business"}
+
+//  let details = business_details["options"];
+//  let business_div = document.querySelector("#business");
+
+//  let name_div = document.createElement("div");
+//  name_div.className = "plan_name";
+//  name_div.innerHTML = business_details["plan_name"];
+//  business_div.append(name_div);
+
+//  let price_div = document.createElement("div");
+//  price_div.className = "price";
+//  price_div.innerHTML = `$ <span style="font-size: 60px">${business_details["price"]}</span>/month`
+//  business_div.append(price_div);
+
+//  for(let x in details){
+//     let list_div = document.createElement("div");
+//     list_div.className = "item_checkbox";
+//     let small_div = document.createElement("div");
+//     let checkbox_div = document.createElement("div");
+//     list_div.append(checkbox_div,small_div);
+//     business_div.append(list_div);
+//     let y = `
+//     <label for="tac">
+//         ${x}
+//   </label>
+//   `
+//   small_div.innerHTML = y;
+
+//  let z =  `<input id="tac" type="checkbox" ${details[x]? "checked" : "notchecked"}/>`
+//  checkbox_div.innerHTML = z;
+//  }
+
+ // 
+
+ let data_arr = [ {
+    "options" :   {
+  "Time tracking": true,
+  "Unlimited projects and clients": true,
+  "Reporting": true,
+  "Timer button in 50+ web apps": true,
+  "Calendar integrations: Google, Outlook": true,
+  "Billable rates and money tracking": true,
+  "Budgeting for projects": true,
+  "Invocing": true,
+  "Task management": true,
+  "Activity levels for employees": true,
+  "Apps and sites usage reports": true,
+  "Screenshots capturing": true,
+  "Client logins for access to reports": true,
+  "Paid timeoff tracking": true,
+  "Payroll for employees": true,
+  "Time tracking permissions": true,
+  "Time-sync with Jira and Quickbooks": true,
+  "Time-sync with Gitlab and Redmine": true,
+  "Time off calender": true,
+  "Work schedule": true,
+  "Team dashboard/Personal dashboard": true
+ },
+ "id": 1,
+ "price" : 7,
+"plan_name" : "Business"},
+
+ {
+    "options" :   {
+  "Time tracking": true,
+  "Unlimited projects and clients": true,
+  "Reporting": true,
+  "Timer button in 50+ web apps": true,
+  "Calendar integrations: Google, Outlook": true,
+  "Billable rates and money tracking": true,
+  "Budgeting for projects": true,
+  "Invocing": true,
+  "Task management": true,
+  "Activity levels for employees": true,
+  "Apps and sites usage reports": false,
+  "Screenshots capturing": false,
+  "Client logins for access to reports": false,
+  "Paid timeoff tracking": false,
+  "Payroll for employees": false,
+  "Time tracking permissions": false,
+  "Time-sync with Jira and Quickbooks": false,
+  "Time-sync with Gitlab and Redmine": false,
+  "Time off calender": false,
+  "Work schedule": false,
+  "Team dashboard/Personal dashboard": false
+ },
+ "id": 2,
+ "price" : 5,
+"plan_name" : "Professional"},
+
+ {
+    "options" :   {
+  "Time tracking": true,
+  "Unlimited projects and clients": true,
+  "Reporting": true,
+  "Timer button in 50+ web apps": true,
+  "Calendar integrations: Google, Outlook": false,
+  "Billable rates and money tracking": false,
+  "Budgeting for projects": false,
+  "Invocing": false,
+  "Task management": false,
+  "Activity levels for employees": false,
+  "Apps and sites usage reports": false,
+  "Screenshots capturing": false,
+  "Client logins for access to reports": false,
+  "Paid timeoff tracking": false,
+  "Payroll for employees": false,
+  "Time tracking permissions": false,
+  "Time-sync with Jira and Quickbooks": false,
+  "Time-sync with Gitlab and Redmine": false,
+  "Time off calender": false,
+  "Work schedule": false,
+  "Team dashboard/Personal dashboard": false
+ },
+ "id": 3,
+ "price" : 0,
+"plan_name" : "Free"}
+
+]
+
+for(let i = 0; i < data_arr.length; i++){
+    let details = data_arr[i]["options"];
+ let plan_div = document.createElement("div");
+ let plan_big_div = document.querySelector("#plans");
+ plan_big_div.append(plan_div);
+
+ let name_div = document.createElement("div");
+ name_div.className = "plan_name";
+ name_div.innerHTML = data_arr[i]["plan_name"];
+ plan_div.append(name_div);
+
+ let price_div = document.createElement("div");
+ price_div.className = "price";
+ price_div.innerHTML = `$ <span style="font-size: 50px">${data_arr[i]["price"]}</span>  /month`
+ plan_div.append(price_div);
+
+ for(let x in details){
+    let list_div = document.createElement("div");
+    list_div.className = "item_checkbox";
+    let small_div = document.createElement("div");
+    let checkbox_div = document.createElement("div");
+    let z =  `<input id="tac" type="checkbox" ${details[x]? "checked" : "notchecked"}/>`
+    checkbox_div.innerHTML = z;
+    list_div.append(checkbox_div,small_div);
+    plan_div.append(list_div);
+    let y = `
+    <label for="tac" ${details[x]? "style=color:black" : "style=color:grey"}>
+        ${x}
+  </label>
+  `
+  small_div.innerHTML = y;
+ }
+}
+</script>
