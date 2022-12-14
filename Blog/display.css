@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Oxygen;
+    src: url('https://fonts.googleapis.com/css?family=Oxygen');
+}
+body{
+    margin: 0;
+}
+nav {
+    position: relative;
+    background-color: #f2e8e8;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+nav ul {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    background-color: #000;
+}
+nav a {
+    text-decoration: none;
+    color: #777;
+    padding: 15px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+nav a:hover {
+    color: #000;
+}
+.logo a {
+    font-size: 25px;
+}
+nav ul {
+    list-style: none;
+}
+ul.drop-menu li {
+    display: none;
+    list-style: none;
+}
+li:hover > ul.drop-menu li {
+    display: flex;
+    flex: 1;
+}
+li > ul.drop-menu {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 100%;
+    width: 100%;
+}
