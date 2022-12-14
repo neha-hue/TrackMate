@@ -5,8 +5,229 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script 
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="support.css">
 </head>
 <body>
-    time tracking
+   <section id="top">
+    <div id="header">
+        <h1>How can we help you?</h1>
+        <form class="nosubmit">
+            <input class="nosubmit" type="search" placeholder="Enter a question, keyword or topic to find answers">
+        </form>
+    </div>
+   </section>
+   <section class="videos-section">
+        <div class="container">
+            <h2>Quick Start Videos</h2>
+            <ul class="video-list">
+                    <li class="video">
+                        <div class="video-thumbnail">
+                            <img class="video-img" src="https://i.ytimg.com/vi/jT3467I-c2M/mqdefault.jpg">
+                            <div class="video-play-button-wrapper">
+                                <button type="button" class="btn btn-primary-dark rounded-circle" data-toggle="modal" data-target="#youTubeVideoModal" data-video-url="https://www.youtube.com/embed/jT3467I-c2M?autoplay=1&amp;controls=1&amp;list=PL74QEPdFcvLbliXZZ04Zm8UlGl_G6tmvL&amp;listType=playlist">
+                                <i class="fa fa-play"></i>  
+                               </button>
+                            </div>
+                        <div class="video-title">
+                            Time tracking basics
+                        </div>
+                    </div></li>
+                    <li class="video">
+                        <div class="video-thumbnail">
+                            <img class="video-img" src="https://i.ytimg.com/vi/7V5_warmbcI/mqdefault.jpg">
+                            <div class="video-play-button-wrapper">
+                                <button type="button" class="btn btn-primary-dark rounded-circle" data-toggle="modal" data-target="#youTubeVideoModal" data-video-url="https://www.youtube.com/embed/7V5_warmbcI?autoplay=1&amp;controls=1&amp;list=PL74QEPdFcvLbliXZZ04Zm8UlGl_G6tmvL&amp;listType=playlist">
+                                <i class="fa fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-title">
+                            Setting up a billable project
+                        </div>
+                    </div></li>
+                    <li class="video">
+                        <div class="video-thumbnail">
+                            <img class="video-img" src="https://i.ytimg.com/vi/URi_wsl5o4E/mqdefault.jpg">
+                            <div class="video-play-button-wrapper">
+                                <button type="button" class="btn btn-primary-dark rounded-circle" data-toggle="modal" data-target="#youTubeVideoModal" data-video-url="https://www.youtube.com/embed/URi_wsl5o4E?autoplay=1&amp;controls=1&amp;list=PL74QEPdFcvLbliXZZ04Zm8UlGl_G6tmvL&amp;listType=playlist">
+                                <i class="fa fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-title">
+                            Connecting apps to TMetric
+                        </div>
+                    </div></li>
+                    <li class="video">
+                        <div class="video-thumbnail">
+                            <img class="video-img" src="https://i.ytimg.com/vi/VKYxhPHEOU4/mqdefault.jpg">
+                            <div class="video-play-button-wrapper">
+                                <button type="button" class="btn btn-primary-dark rounded-circle" data-toggle="modal" data-target="#youTubeVideoModal" data-video-url="https://www.youtube.com/embed/VKYxhPHEOU4?autoplay=1&amp;controls=1&amp;list=PL74QEPdFcvLbliXZZ04Zm8UlGl_G6tmvL&amp;listType=playlist">
+                                <i class="fa fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-title">
+                            Advanced Time Tracking
+                        </div>
+                    </div></li>
+            </ul>
+
+                <div class="content">
+                    <a class="link-more" href="https://www.youtube.com/playlist?list=PL74QEPdFcvLbliXZZ04Zm8UlGl_G6tmvL" target="_blank">Watch Other Tutorials  <i class="fa-solid fa-arrow-up-right"></i><svg class="icon"><use xlink:href="/images/v3/icon-arrow-right.svg#arrow-right"></use></svg></a>
+                </div>
+
+            <div class="modal fade video-modal" id="youTubeVideoModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content"></div>
+                </div>
+            </div>
+            <script>
+              window.addEventListener('load', function () {
+                initYouTubeVideoModal();
+              });
+            </script>
+            <div id="video"></div>
+        </div>
+    </section>
+    <section class="user-guide">
+        <div class="container">
+            <h2>User Guide</h2>
+            <ul class="guide-links">
+                        <li>
+                            <a class="item" href="/help/getting-started">
+                                <img class="icon" src="https://tmetric.com/media/fqmd4fox/icon-guide-getting-started.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Getting Started</strong>
+                                    <span class="text"><p>This section explains what a new TMetric user should know and do to quickly start tracking their work time.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/time-tracking">
+                                <img class="icon" src="https://tmetric.com/media/pgxe2341/icon-guide-time-tracking.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Time Tracking</strong>
+                                    <span class="text"><p>Learn how to manage and lock time, link tasks to time entries, set a required work schedule and permissions.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/tasks/overview">
+                                <img class="icon" src="https://tmetric.com/media/nhhdfvxt/tasks.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Tasks</strong>
+                                    <span class="text"><p>Learn about task management - how to create and edit tasks, customize a task list, and share tasks with others.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/projects">
+                                <img class="icon" src="https://tmetric.com/media/ajnblb01/icon-guide-projects.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Projects</strong>
+                                    <span class="text"><p>This section includes information about creating different types of projects, setting up budgets, and invoicing clients for work days.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/reports">
+                                <img class="icon" src="https://tmetric.com/media/jxsewpku/icon-guide-reports.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Reports</strong>
+                                    <span class="text"><p>General information about using reports in TMetric to review and analyze your time tracking data.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/invoices">
+                                <img class="icon" src="https://tmetric.com/media/42if5ekb/icon-guide-billing-invoicing.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Invoices</strong>
+                                    <span class="text"><p>Make invoicing painless, just go through a learning process described in this section and get paid on time.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/time-off">
+                                <img class="icon" src="https://tmetric.com/media/5uzjal2u/icon-guide-time-off.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Time Off</strong>
+                                    <span class="text"><p>Learn how to simplify employee paid time off and vacation tracking: set up time off policies and properly compensate days off.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/productivity-tracking">
+                                <img class="icon" src="https://tmetric.com/media/0ssdlvqw/icon-guide-productivity-tracking.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Productivity Tracking</strong>
+                                    <span class="text"><p>Here you will find everything about productivity tracking - what activity level is and where to get user activity details.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/team-management">
+                                <img class="icon" src="https://tmetric.com/media/sa1fife4/icon-guide-team-management.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Team Management</strong>
+                                    <span class="text"><p>Learn about team management - how to add people to your workspace, create a team, and monitor and payroll its work.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/workspace-management">
+                                <img class="icon" src="https://tmetric.com/media/lkpdnu2f/icon-guide-workspace-management.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Workspace Management</strong>
+                                    <span class="text"><p>Configure your workspace, manage members, learn user roles and track your time as a team in TMetric.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/apps">
+                                <img class="icon" src="https://tmetric.com/media/rfij2vrr/icon-guide-apps.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Apps</strong>
+                                    <span class="text"><p>This topic describes a broad range of TMetric apps: how to install and use them and the features they provide.&nbsp;</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/data-integrations">
+                                <img class="icon" src="https://tmetric.com/media/mpdjzi1w/icon-guide-integrations.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Integrations</strong>
+                                    <span class="text"><p>Integrate TMetric with various time and project management systems to track time, create reports, and monitor your team.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/user-account-management">
+                                <img class="icon" src="https://tmetric.com/media/iuyisza0/icon-guide-user-account.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">User Account Management</strong>
+                                    <span class="text"><p>Here&nbsp;you will find all the necessary information about a user account in TMetric and how to manage&nbsp;it&nbsp;with ease.</p></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="/help/subscription-billing">
+                                <img class="icon" src="https://tmetric.com/media/srnmkwja/icon-guide-subscription-billing.svg" alt="">
+                                <span class="info">
+                                    <strong class="title">Subscription &amp; Billing</strong>
+                                    <span class="text"><p>This section provides information about the subscription and billing process in TMetric to understand how it all works.</p></span>
+                                </span>
+                            </a>
+                        </li>
+
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
+<script src="support.js"></script>
+
+
+

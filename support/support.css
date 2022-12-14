@@ -1,0 +1,219 @@
+#top{
+    height: 400px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    cursor: auto;
+    box-sizing: border-box;
+    display: block;
+    min-height: 300px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #fff2cc;
+}
+#header{
+    margin-bottom: 1000px;
+}
+#header>h1{
+    font-size: 50px;
+    width: 50%;
+    margin-left: 400px;
+    margin-top: 150px;
+    
+    
+}
+form.nosubmit {
+    border: none;
+    padding: 0;
+    
+}
+  
+input.nosubmit {
+    
+    border: 1px solid #555;
+    width:50%;
+    height: 50px;
+    margin-left: 400px;
+    margin-bottom: 100px;
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    box-sizing: border-box;
+    display: block;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    position: relative;
+    flex: 1 1 auto;
+    padding: .5625rem .75rem .5625rem 2.6875rem;
+    
+    background-size: 20px 20px;
+    font: 500 1.25rem/1.4 PTRootUIMedium,sans-serif;
+    color: #212529;
+    border: 1px solid #a1a7b2;
+    border-radius: 6px;
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+.container{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    cursor: auto;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 320px !important;
+    max-width: 1712px !important;
+    padding: 0 60px;
+}
+.video-list{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    cursor: auto;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 -20px 1.2rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+
+button{
+    color: #fff;
+    border-color: #00356a;
+    border-radius: 50% !important;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background: #212529;
+    transition: all .5s ease;
+   
+}
+.video-play-button-wrapper{
+    width: 25%;
+    margin-left: 120px;
+    margin-top: -120px;
+}
+
+.video-img{
+    border-radius: 10px;
+}
+.link-more{
+    margin-right: -300px;
+    margin-top: -60px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    color: #3070f0;
+    transition: all .5s ease;
+    font: bold 1.25rem/1.4 PTRootUIBold,sans-serif;
+}
+.guide-link{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border:1px solid red;
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    box-sizing: border-box;
+    display: block;
+    padding: 64px 0 44px;
+    border-top: 1px solid #e2e6eb; 
+}
+
+.icon{
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    font-weight: 500;
+    list-style: none;
+    color: #3070f0;
+    box-sizing: border-box;
+    border-style: none;
+    display: block;
+    margin-right: 1rem;
+    width: 32px;
+    min-width: 32px;
+}
+.title{
+   
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    list-style: none;
+    color: #3070f0;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: .875rem;
+    font: bold 1.25rem/1.4 PTRootUIBold,sans-serif;
+    transition: all .5s ease;
+}
+.guide-links li{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    -webkit-text-size-adjust: 100%;
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    list-style: none;
+    box-sizing: border-box;
+    width: 60%;
+    
+}
+p{
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    font-weight: 500;
+    list-style: none;
+    color: #212529;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
