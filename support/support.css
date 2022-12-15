@@ -102,7 +102,7 @@ input.nosubmit {
 
 
 button{
-    color: #fff;
+    color: rgb(228, 228, 228);
     border-color: #00356a;
     border-radius: 50% !important;
     cursor: pointer;
@@ -124,8 +124,7 @@ button{
     border-radius: 10px;
 }
 .link-more{
-    margin-right: -300px;
-    margin-top: -60px;
+    margin-left: 100px;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     --font-family-sans-serif: Roboto, sans-serif;
@@ -139,23 +138,9 @@ button{
     color: #3070f0;
     transition: all .5s ease;
     font: bold 1.25rem/1.4 PTRootUIBold,sans-serif;
-}
-.guide-link{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    border:1px solid red;
-    --font-family-sans-serif: Roboto, sans-serif;
-    --font-family-monospace: monospace;
-    font-size: 1rem;
-    text-align: left;
-    line-height: 1.5;
-    font-family: PTRootUIMedium,sans-serif;
-    color: #212529;
-    font-weight: 500;
-    box-sizing: border-box;
-    display: block;
-    padding: 64px 0 44px;
-    border-top: 1px solid #e2e6eb; 
+    margin-top: 60px;
+   
+
 }
 
 .icon{
@@ -174,22 +159,43 @@ button{
     width: 32px;
     min-width: 32px;
 }
-.title{
-   
+.item{
     --font-family-sans-serif: Roboto, sans-serif;
     --font-family-monospace: monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    font-weight: 500;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: transparent;
+    color: #3070f0;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #e2e6eb;
+    height: 100%;
+    padding: 0 15px;
+}
+.title{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    display: flex;
+    align-items: flex-start;
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    font-weight: 500;
     list-style: none;
     color: #3070f0;
     box-sizing: border-box;
-    display: block;
-    margin-bottom: .875rem;
-    font: bold 1.25rem/1.4 PTRootUIBold,sans-serif;
-    transition: all .5s ease;
+    
 }
-.guide-links li{
+.guide-links{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
     -webkit-text-size-adjust: 100%;
     --font-family-sans-serif: Roboto, sans-serif;
     --font-family-monospace: monospace;
@@ -200,10 +206,13 @@ button{
     font-weight: 500;
     list-style: none;
     box-sizing: border-box;
-    width: 60%;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    width: 95%;
+    gap: 20px;
     
 }
-p{
+.text{
     --font-family-sans-serif: Roboto, sans-serif;
     --font-family-monospace: monospace;
     font-size: 1rem;
@@ -211,9 +220,144 @@ p{
     font-family: PTRootUIMedium,sans-serif;
     font-weight: 500;
     list-style: none;
-    color: #212529;
+    text-align: left;
     box-sizing: border-box;
-    margin-top: 0;
-    margin-bottom: 1rem;
+    display: block;
+    color: #212529;
+}
+/* .container{
+    border-bottom: 1px solid #e2e6eb;
+} */
+.faq-section{
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e2e6eb;
+    display: block;
+    padding: 64px 0 44px;
+    background: #f8f9fa;
+}
+.faq-content{
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    box-sizing: border-box;
+    margin: 0 -20px;
+    column-count: 3;
+    column-gap: 0;
+}
+.content{
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    box-sizing: border-box;
+    
+    padding: 0 15px;
+}
+.links{
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 600px;
+    --breakpoint-md: 1024px;
+    --breakpoint-lg: 1440px;
+    --breakpoint-xl: 1920px;
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.links>li>a{
+    
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    font-weight: 500;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: transparent;
+    color: #3070f0;
+    display: inline-block;
+    vertical-align: top;
+    transition: all .5s ease;
+}
+.bottom-section{
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+    display: block;
+    transition: transform .5s ease,opacity .5s ease;
+    padding: 64px 0;
+    text-align: center;
+    border-bottom: 0px solid #1279f7;
+    transform: translateY(0);
+    opacity: 1;
+    background: #2542b8;
+    color: #fff;
+}
+
+
+.bottom-section div>div{
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    border-bottom: 0px solid #e2e6eb;
+    margin: 0 auto 2rem;
+    width: 70%;
+}
+#contact-button{
+    --font-family-sans-serif: Roboto, sans-serif;
+    --font-family-monospace: monospace;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: .5625rem .75rem;
+    transition: all .3s ease;
+    width: auto;
+    font: bold 1rem/1.5rem PTRootUIBold,sans-serif;
+    border-radius: 6px;
+    min-width: 128px;
+    cursor: pointer;
+    color: white;
 }
 
