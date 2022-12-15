@@ -1,0 +1,68 @@
+.togglebar{
+    display: flex;
+}
+
+.togglebar>label{
+    font-size: 25px;
+}
+
+input[type="checkbox"].toggle{
+    opacity: 0;
+    position: relative;
+    left: -900px;
+    top: -900px;
+}
+
+
+input[type="checkbox"].toggle + label{
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="checkbox"].toggle + label::before{
+    content: "";
+    width: 70px;
+    height: 30px;
+    background-color: rgb(118, 239, 104);
+    border-radius: 25px;
+    margin-right: 5px;
+    margin-left: -5px;
+    transition: 200ms ease-in-out;
+}
+
+input[type="checkbox"].toggle + label::after{
+    content: "";
+    position: absolute;
+    left: 115px;
+    width: 30px;
+    height: 28px;
+    background-color: rgba(10, 98, 10, 0.695);
+    border-radius: 50px;
+    margin-right: 5px;
+    margin-left: 0px;
+    transition: 200ms ease-in-out;
+}
+
+input[type="checkbox"].toggle:checked + label::after{
+    transform: translateX(100%);
+}
+
+
+input[type="checkbox"].toggle:checked + label{
+    color: palevioletred;
+}
+
+
+
+
+/* label + input[type="checkbox"].toggle:checked {
+    color: green;
+} */
+
+/* #monthly{
+color: blue;
+} */
+
+
