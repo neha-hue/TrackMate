@@ -78,7 +78,7 @@
  }
  .navigation{
 position:absolute;
-    background-color: cadetblue;
+background-color:  rgb(143, 214, 247);
 width:300px;
 border-radius: 15px;
 overflow: hidden;
@@ -90,8 +90,9 @@ height:570px;
     bottom:15px;
     right:15px;
     width:40px;
+    border: 1px solid black;
     height:40px;
-    background-color: rgb(245, 239, 239);
+    background-color: rgb(216, 250, 239);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -126,10 +127,10 @@ height:570px;
     transform: translateY(0px) rotate(225deg);
  }
  .navigation.active{
-    width: 35px;
-    border-radius: 80px;
-    padding-left: 10px;
-    background-color: cadetblue;
+    width: 50px;
+    border-radius: 100px;
+    padding-left: 20px;
+    background-color:  rgb(143, 214, 247);
  }
 
  .navigation ul{
@@ -147,15 +148,16 @@ height:570px;
  }
  
  .navigation ul li:hover{
-    background-color:white;
+    background-color:rgb(205, 203, 203);
     color: black;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
  }
 
- .navigation ul li .title{
+ .navigation ul li .title-1{
     position: relative;
     display: block;
     padding: 0 10px;
-    width: 210px;
+    width: 300px;
     height: 60px;
     cursor: pointer;
     font-size: 19px;
@@ -163,9 +165,163 @@ height:570px;
     white-space: nowrap;
     margin-top: 20px;
     border: 1px solid cadetblue;
+    background-color: white;
+    border: 1px solid white;
     color: gray;
  }
+ .navigation ul li .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 19px;
+    line-height: 60px;
+    white-space: nowrap;
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid white;
+    color: gray;
+ }
+ .navigation ul li .title-2{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 19px;
+    background-color: white;
+    line-height: 60px;
+    white-space: nowrap;
+    margin-top: 20px;
+    border: 1px solid white;
+    color: gray;
+ }
+ .navigation ul li .title-3{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    width: 300px;
+    height: 60px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 19px;
+    line-height: 60px;
+    white-space: nowrap;
+    margin-top: 20px;
+    border: 1px solid white;
+    color: gray;
+ }
+ .navigation ul li .title-4{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 19px;
+    line-height: 60px;
+    border: 1px solid white;
+    background-color: white;
+    white-space: nowrap;
+    margin-top: 20px;
+    color: rgb(107, 107, 107);
+   }
+   
+   .cat{
+    padding-left: 50px;
+   font-size:30px;
+   font-family: sans-serif;
+   color: rgb(132, 131, 131);
+ }
+
+ .containermain{
+   width:70%;
+   height:auto;
+   margin-left: 350px;
+   display: grid;
+  grid-template-columns:repeat(3,1fr) ;
+  padding-left: 20px;
+  gap:30px;
+ }
+
+ .containermain>div{
+   width: 280px;
+   height:200px;
+   border-radius: 15px;
+   background-color:white;
+   transition: 0.5s;
+   font-size: large;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-align: center;
+   padding: 20px;
+   border: 0.5px solid rgb(181, 178, 178);
+}
+
+.containermain>div:hover{
+   height:240px;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+ }
  
+ .containermain img{
+   width:85%;
+   padding-left: 240px;
+   height:150px;
+  transform: translateX(-50%);
+ }
+ 
+ #bottom{
+   width:100%;
+   height:300px;
+   display: flex;
+   color: rgb(38, 38, 128);
+   background-color:  rgb(205, 233, 246);
+   margin-top: 50px;
+ }
+ #bottom>div img{
+   width:50%;
+   padding-left: 200px;
+ }
+ #bottom>div p{
+   font-size: 17px;
+   padding-left: 40px;
+   font-family: sans-serif;
+ }
+ #bottom>div h2{
+   font-family: sans-serif;
+   padding-top: 40px;
+   font-size: 30px;
+   padding-left: 40px;
+ }
+
+ #star{
+   background-color:rgb(251, 218, 175);
+   height:340px;
+   width:100%;
+   flex:grid;
+   grid-template-columns:repeat(1,1fr) ;
+ }
+#star>div{
+   text-align: center;
+   padding-top: 7px;
+}
+
+#footer{
+   width:100%;
+   height:360px;
+   background-color: rgb(211, 211, 233);
+   display: flex;
+   justify-content: space-around;
+}
+
+.one>div{
+   display: flex;
+}
+
+.two>div{
+   display: flex;
+}
     </style>
 </head>
 <body>
@@ -198,33 +354,115 @@ height:570px;
 
     <input class="searching" placeholder="Type service name to find integration" type="search">
 
-    <div id="midone">
-        <h2>Categories</h2>
+        <h2 class="cat">Categories</h2>
         <div class="navigation">
-           <ul>
-               <li>
-                   <button class="title">All Apps</button>
-                </li>
-                <li>
-                   <button class="title">Business</button>
-                </li>
-                <li>
-                   <button class="title">Development</button>
-                </li>
-                <li>
-                   <button class="title">Help Desk</button>
-                </li>
-                <li>
-                   <button class="title">Project Management</button>
-                </li>
-                <li>
-                   <button class="title">Desk Management</button>
-                </li>
-           </ul>
-           <div class="toggle"></div>
+         <ul>
+            <li>
+                <button class="title-1">All Apps</button>
+             </li>
+             <li>
+                <button class="title-2">Business</button>
+             </li>
+             <li>
+                <button class="title-3">Development</button>
+             </li>
+             <li>
+                <button class="title-4">Help Desk</button>
+             </li>
+             <li>
+                <button class="title">Project Management</button>
+             </li>
+             <li>
+                <button class="title">Desk Management</button>
+             </li>
+        </ul>
+        <div class="toggle"></div>
         </div>
-    </div>
-   
+        <div class="containermain">
+
+        </div>
+      
+        <div id="bottom">
+         <div>
+            <h2>Didn't find integration with your <br> favourite tool?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aut delectus nobis laborum ut praesentium sed, saepe, provident odit mollitia iure, architecto nostrum.</p>
+         </div>
+          <div>
+            <img src="https://tmetric.com/media/vxldyi4n/img-app-tmetric-cases.svg" alt="">
+          </div>
+        </div>
+
+
+        <div id="star">
+         <div>
+            <h1>Read Hundreds of Reviews</h1>
+         </div>
+         <div>
+            <img src="https://tmetric.com/media/rt1k0zjc/img-rating-4-5.svg" alt="">
+         </div>
+         <div>
+            <h1>4.5 Customer Rating</h1>
+         </div>
+         <div>
+            <h1>242 Reviews</h1>
+         </div>
+        </div>
+
+        <div id="footer">
+         <div>
+            <h2>TRACKMATE</h2>
+         </div>
+         <div class="one">
+            <h3>Applications</h3>
+            <div>
+               <span><ion-icon name="desktop-outline"></ion-icon></span>
+               <p>Desktop</p>
+            </div>
+            <div>
+               <span><ion-icon name="logo-apple"></ion-icon></span>
+               <p>IOS</p>
+            </div>
+            <div>
+              <span><ion-icon name="logo-android"></ion-icon></span>
+               <p>Android</p>
+            </div>
+         </div>
+         <div class="two">
+            <h3>Browser Extensions</h3>
+            <div>
+               <span><ion-icon name="sync-circle-outline"></ion-icon></span>
+               <p>Chrome</p>
+            </div>
+            <div>
+               <span><ion-icon name="logo-firefox"></ion-icon></span>
+               <p>Firefox</p>
+            </div>
+            <div>
+               <span><ion-icon name="scan-circle-outline"></ion-icon></span>
+               <p>Opera</p>
+            </div>
+            <div>
+               <span><ion-icon name="list-circle-outline"></ion-icon></span>
+               <p>Safari</p>
+            </div>
+         </div>
+         <div>
+            <h3>Resources</h3>
+            <p>Solutions</p>
+            <p>Integrations</p>
+            <p>Help</p>
+            <p>Time tracker Comparision</p>
+            <p>Blog</p>
+         </div>
+         <div>
+            <h3>About</h3>
+            <p>About TRACKMATE</p>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Cookies Policy</p>
+         </div>
+        </div>
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
@@ -236,4 +474,97 @@ height:570px;
    navigation.classList.toggle("active");
     }
 
+    let mycontainer = document.querySelector(".containermain");
+   
+      async function onedata(){
+         let data =  await fetch("http://localhost:3000/posts")
+         console.log(data)
+         var jsonobj = await data.json();
+         console.log(jsonobj)
+         displaydata(jsonobj);
+      }
+      onedata();
+      
+      function displaydata(data){
+       data.forEach((ele) => {
+         let div = document.createElement("div");
+         let img = document.createElement("img");
+         img.src = ele.Image;
+         let description = document.createElement("description");
+         description.innerText = ele.description;
+
+         div.append(img,description);
+         mycontainer.append(div);
+       });
+    }
+
+    
+async function getdata(){
+  try{
+    let res = await fetch("http://localhost:3000/data");
+    let out = await res.json();
+    data = [...out]
+    console.log(out)
+    let BusinessData = document.querySelector(".title-2")
+BusinessData.addEventListener("click",(event)=>{
+   event.preventDefault();
+   display(out);
+})
+  }
+  catch(err){
+    alert(err);
+  }
+}
+getdata();
+
+
+  function display(out){
+   mycontainer.innerHTML="";
+   out.forEach((ele)=>{
+      let div = document.createElement("div");
+         let img = document.createElement("img");
+         img.src = ele.Image;
+         let description = document.createElement("description");
+         description.innerText = ele.description;
+
+         div.append(img,description);
+         mycontainer.append(div);
+   })
+  }
+
+  async function twoData(){
+  try{
+    let res = await fetch("http://localhost:3000/data2");
+    let out = await res.json();
+    data = [...out]
+    console.log(out)
+    let develop = document.querySelector(".title-3")
+develop.addEventListener("click",(event)=>{
+   event.preventDefault();
+   display(out);
+})
+  }
+  catch(err){
+    alert(err);
+  }
+}
+twoData();
+
+
+  function display(out){
+   mycontainer.innerHTML="";
+   out.forEach((ele)=>{
+      let div = document.createElement("div");
+         let img = document.createElement("img");
+         img.src = ele.Image;
+         let description = document.createElement("description");
+         description.innerText = ele.description;
+
+         div.append(img,description);
+         mycontainer.append(div);
+   })
+  }
+
+  
 </script>
+
