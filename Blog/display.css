@@ -1,17 +1,18 @@
-@font-face {
+/* @font-face {
     font-family: Oxygen;
     src: url('https://fonts.googleapis.com/css?family=Oxygen');
-}
+} */
 body{
     margin: 0;
 }
 nav {
     position: relative;
-    background-color: #f2e8e8;
+    background-color: #68ed0a;
     color: rgb(235, 56, 56);
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
+    margin: auto;
 }
 nav ul {
     height: 50px;
@@ -19,7 +20,7 @@ nav ul {
     align-items: center;
     justify-content: flex-start;
     margin: 0;
-    background-color: rgb(75, 219, 31);
+    /* background-color: rgb(75, 219, 31); */
 }
 nav a {
     text-decoration: none;
@@ -36,19 +37,32 @@ nav a:hover {
 }
 nav ul {
     list-style: none;
+    /* background-color: rgb(32, 31, 30); */
 }
 ul.drop-menu li {
     display: none;
     list-style: none;
+    
 }
 li:hover > ul.drop-menu li {
     display: flex;
     flex: auto;
+    
+    
 }
 li > ul.drop-menu {
     position: absolute;
     display: flex;
+    
     left: 0;
     top: 100%;
     width: 100%;
+    flex: 4;
+    padding: 0px 30px;
+}
+ul.drop-menu>div{
+    background-color: black;
+    margin: 0px 30px;
+    padding: 0px 30px;
+    border-radius: 9px;
 }
