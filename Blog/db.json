@@ -33,6 +33,14 @@
       "number": "78899",
       "password": "1234",
       "id": 4
+    },
+    {
+      "username": "neha jaiswal brijesh",
+      "lastname": "jaiswal",
+      "email": "neh1900@gmail.com",
+      "number": "677889",
+      "password": "12345",
+      "id": 5
     }
   ],
   "posts": [
@@ -43,16 +51,16 @@
       "body": "Applications designed for lawyers enable legal professionals to switch from physical presence in the law office to remote work mode instantly. So in...",
       "date": "09/08/2022",
       "author": "Alla Chernets",
-      "category": "tshirt"
+      "category": "lawyers"
     },
     {
       "id": 3,
       "title": "10 Mental Models to Master Productivity",
       "image": "https://blog.tmetric.com/content/images/size/w1000/2022/11/10_Mental_Models_1160x664_2.png",
-      "body": "Mental models are a powerful tool for mastering productivity. This article explains how to use them and helps you to build a library of mental models",
+      "body": "10 Mental Models to Master Productivity\nMental models are a powerful tool for mastering productivity. This article explains how to use them and helps you to build a library of mental models",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "productivity"
     },
     {
       "id": 4,
@@ -61,7 +69,7 @@
       "body": "Deconstructing a highly productive day is a way of understanding how to maximize your time while you're working but without stretching yourself too",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "productivity"
     },
     {
       "id": 5,
@@ -70,7 +78,7 @@
       "body": "Time tracking is simple yet effective in achieving and maintaining a work life balance. In our new post, we show what time tracking methods you need to be",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "work life"
     },
     {
       "id": 6,
@@ -79,7 +87,7 @@
       "body": "There are a lot of channels out there that claim to know the secret to productivity. But sifting through all of them can be a productivity nightmare in",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "productivity"
     },
     {
       "id": 7,
@@ -88,7 +96,7 @@
       "body": "Here are some of the most common questions we get regarding time tracking. We've answered all of them.",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "Time tracking"
     },
     {
       "id": 8,
@@ -97,7 +105,7 @@
       "body": "Time is the most valuable and scarce commodity. If you want to know how to make the most of yours, take 10 easy steps to improve time management",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "Time tracking"
     },
     {
       "id": 9,
@@ -106,7 +114,7 @@
       "body": "Our team is very much excited to share some pretty great news with you: TMetric has made it to the top Team Management tools on the Capterra",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "Time tracking"
     },
     {
       "id": 10,
@@ -115,7 +123,7 @@
       "body": "Industries embrace the tech age, which leads to the digitalization of their businesses. What does it mean for motivational entrepreneurs? Ultimately",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "productivity"
     },
     {
       "id": 11,
@@ -124,7 +132,7 @@
       "body": "Presentation graphics can be a great way to grab attention and make a point. However, you can't always find the right image to use.",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "productivity"
     },
     {
       "id": 12,
@@ -133,7 +141,7 @@
       "body": "Work schedules can be hard to create as they require considerable effort and resources. Read on to know what to start with and how to create",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "work life"
     },
     {
       "id": 13,
@@ -142,7 +150,7 @@
       "body": "Las plantillas de horarios de trabajo pueden ser una gran ayuda para facilitar el flujo de trabajo y eliminar los cuellos de botella relacionados con las tareas",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "work life"
     },
     {
       "id": 14,
@@ -151,7 +159,7 @@
       "body": "Today we've released a new version of TMetric. In this update, we are introducing TMetric and ClickUp integration. Now you can easily track time spent",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "Time tracking"
     },
     {
       "id": 15,
@@ -160,7 +168,7 @@
       "body": "Sigue leyendo para saber cómo hacer más rentable el seguimiento del tiempo en QuickBooks, automatizando los cálculos del tiempo de trabajo",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "work life"
     },
     {
       "id": 16,
@@ -169,7 +177,7 @@
       "body": "It can be difficult to find the time to read through all of the books full of quotable wisdom about productivity and time management. ",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "productivity"
     },
     {
       "id": 17,
@@ -178,7 +186,7 @@
       "body": "El 30 % de los empleados de todo el mundo, según confesión propia, pasan hasta dos horas al día navegando sin rumbo por internet. Descarta.",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "Time tracking"
     },
     {
       "id": 18,
@@ -187,7 +195,7 @@
       "body": "Tools are the lifeblood of getting things done in a stress-free way. In this post, we will look at the top cost-effective tools that are essential for anyone",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "productivity"
     },
     {
       "id": 19,
@@ -196,7 +204,7 @@
       "body": "Lee por qué el timeboxing funciona para completar las tareas difíciles más rápidamente y qué aplicaciones de seguimiento del tiempo son tu me",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "work life"
     },
     {
       "id": 20,
@@ -205,7 +213,7 @@
       "body": "The first step in improving time management is to identify the habits that can hold you back. We will help you do it and tell you how to fix bad",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "Time tracking"
     },
     {
       "id": 21,
@@ -214,7 +222,7 @@
       "body": "La implantación de hojas de horas es una solución universal para el compromiso de los empleados y la plena responsabilidad empresarial. Aquí tienes 10",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "productivity"
     },
     {
       "id": 22,
@@ -223,7 +231,7 @@
       "body": "Think you're already a time management ninja? Think again! These 6 time blocking tactics can help you find the time for everything that matters to ",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "Time tracking"
     },
     {
       "id": 23,
@@ -232,7 +240,7 @@
       "body": "These are the best employee time tracking and productivity apps to help you track and manage your time. Time management is a skill in itself that can",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "productivity"
     },
     {
       "id": 24,
@@ -241,7 +249,7 @@
       "body": "Productivity in the remote-first world is easier said than done even when distractions of open space are out of sight. How can businesses encourage",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "productivity"
     },
     {
       "id": 25,
@@ -250,7 +258,7 @@
       "body": "Remote work poses many challenges to effective collaboration and team productivity. These 7 best practices can help you maximize your remote",
       "date": "09/08/2022",
       "author": "lucianae",
-      "category": "tshirt"
+      "category": "productivity"
     }
   ]
 }

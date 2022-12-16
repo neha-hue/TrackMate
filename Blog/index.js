@@ -9,7 +9,9 @@ const dates = new Date();
 
 console.log(dates)
 const authorValue = document.getElementById("author-value")
+const categoryValue=document.getElementById("select-tag")
 const url = " http://localhost:3000/posts";
+
 let output = ""
 const renderPosts = (posts) => {
     posts.forEach(post => {
@@ -22,7 +24,8 @@ const renderPosts = (posts) => {
           <p class="card-text">${post.body}</p>
           <p class="card-date">${post.date}</p>
           <p class="card-author">${post.author}</p>
-          <a href="#" class="card-link" id="edit-post">Edit</a>
+          <p class="card-category">${post.category}</p>
+         <a href="#" class="card-link" id="edit-post">Edit</a>
           <a href="#" class="card-link" id="delete-post">Delete</a>
         </div>
         
@@ -59,10 +62,15 @@ postsList.addEventListener("click", (e) => {
         let titleContent = parent.querySelector('.card-title').textContent;
         let bodyContent = parent.querySelector(".card-text").textContent;
         let authorContent = parent.querySelector(".card-author").textContent;
+        let categoryContent=parent.querySelector(".card-category").textContent;
+        let dateContent=parent.querySelector(".card-date").textContent
         imageValue.value = imageContent;
         titleValue.value = titleContent;
         bodyValue.value = bodyContent;
         authorValue.value = authorContent;
+        categoryValue.value=categoryContent;
+        // dates=dateContent;
+
     }
     btnSubmit.addEventListener("click", (e) => {
         e.preventDefault()
@@ -75,12 +83,15 @@ postsList.addEventListener("click", (e) => {
                 image: imageValue.value,
                 title: titleValue.value,
                 body: bodyValue.value,
+                // date:dates,
 
                 author: authorValue.value,
+                category:categoryValue.value,
             })
         })
             .then(res => res.json())
-            .then(()=>location.reload())
+            .then(()=>window.location.reload());
+            addPostForm.reset();
     })
     //update the existing data
     //Mehod:GET
@@ -101,8 +112,9 @@ addPostForm.addEventListener('submit', (e) => {
             image: imageValue.value,
             title: titleValue.value,
             body: bodyValue.value,
-            dates: dates.value,
+            // dates: dates,
             author: authorValue.value,
+            category:categoryValue.value,
 
 
 
@@ -113,7 +125,9 @@ addPostForm.addEventListener('submit', (e) => {
             const dataArr = [];
             dataArr.push(data);
             renderPosts(dataArr)
+            
         })
+        
 
 })
 
