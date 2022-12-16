@@ -12,10 +12,11 @@
     <style>
         * {
             font-family: PTRootUIMedium, sans-serif;
+            color: rgb(41,46,51);
         }
 
         #price_page_top {
-            background-color: rgba(128, 128, 128, 0.881);
+            background-color: rgb(232,237,255);
             text-align: center;
             padding: 50px;
         }
@@ -24,16 +25,18 @@
             font-size: 60px;
         }
 
-        .input_slider {
+        #input_slider {
             width: 400px;
-            margin-bottom: 50px;
         }
 
         #input_number {
             width: 60px;
-            padding: 10px;
+            padding: 5px;
             font-size: 25px;
             color: black;
+            border-color: grey;
+            border: 1px solid gray;
+            border-radius: 5px;
         }
 
         .price>span {
@@ -58,7 +61,7 @@
             margin: auto;
             font-size: 40px;
             font-weight: bold;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             border: 0px solid green;
             padding: 10px;
             margin-top: 10px;
@@ -92,7 +95,8 @@
             margin-top: 10px;
             width: 60%;
             margin: auto;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
+
         }
 
         .item_checkbox {
@@ -129,6 +133,12 @@
 
         #howtobuy{
             margin: auto;
+            margin-bottom: 10px;
+            background-color: rgba(230, 244, 239, 0.773);
+            padding-top: 30px;
+            padding-bottom: 20px;
+            width: 90%;
+            border-radius: 5px;
         }
         #howtobuy>h1{
             text-align: center;
@@ -150,6 +160,74 @@
             font-weight: bold;
             margin-right: 50px;
         }
+
+        #plan_type{
+            text-align: center;
+            align-items: center;
+            display: flex;
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+                }
+        #team_size{
+            display: flex;
+            align-items: center;
+        }
+        #plan_monthly{
+            margin-left: 10%;
+            margin-right: 5%;
+            padding-right: 30px;
+            border-right: 1px solid gray;
+        }
+        #team_size>label,input{
+            margin-left: 5px;
+            margin-right: 10px;
+        }
+
+        #faq{
+            margin: auto;
+            width: auto;
+            background-color: rgb(223, 246, 238);
+            width: 90%;
+            border-radius: 5px;
+        }
+        #faq>h1{
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        #faq>div{
+            margin-left: 30%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 60%;
+        }
+        #faq>div>button{
+            width: 40px;
+            height: 40px;
+            border-radius: 5px; 
+            border: 0px;
+            font-size: medium;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+
+        .que>button{
+            background-color: rgb(254,246,226);
+            color: rgb(155,105,25);
+        }
+
+        .ans>button{
+            background-color: rgb(227,248,231);
+            color: rgb(18,121,36);
+        }
+
+
     </style>
 </head>
 
@@ -168,12 +246,12 @@
         <div id="plan_type">
             <div id="plan_monthly">
                 <div class="togglebar">
-                    <label id="monthly" class="" for="check" style="color: green">
+                    <label id="monthly" class="" for="check" style="color: black">
                         Monthly
                     </label>
                     <input id="paymentPeriod" type="checkbox" class="toggle">
                     <label for="paymentPeriod"></label>
-                    <label id="anually" class="calculator-field-label" for="check">
+                    <label id="anually" class="calculator-field-label" for="check" style="color: grey;">
                         Annually
                     </label>
                 </div>
@@ -181,7 +259,7 @@
             <div id="team_size">
                 <label for="teamsize_number">Team Size</label>
                 <input type="number" id="input_number" value="1" min="1" max="200">
-                <input type="range" class="input_slider" value="1" min="1" max="200" step="1">
+                <input type="range" id="input_slider" value="1" min="1" max="200" step="1">
             </div>
         </div>
 
@@ -210,6 +288,18 @@
 
 
 
+        <div id="faq">
+            <h1> <b>Other Questions</b> </h1>
+            <div class="que"><button class="que">Q</button> <b>Have a large team?</b></div>
+            <div class="ans"><button class="ans">A</button> You can save money with our volume discount for teams of 40+ users. Learn more on FAQ. </div>
+            <div class="que"><button class="que">Q</button> <b>Running a non-profit organisation?</b> </div>
+            <div class="ans"><button class="ans">A</button> Special pricing options for NGO's. To apply, please contact the sales team. </div>
+            <div class="que"><button class="que">Q</button> <b>Have other sales questions?</b> </div>
+            <div class="ans"><button class="ans">A</button> Please contact our sales department at sales@tmetric.com </div>
+        </div>
+
+
+
     </div>
 
 
@@ -220,7 +310,7 @@
 <script>
     //document.querySelector("input").removeAttribute("checked", "");
     let input_number = document.querySelector("#input_number");
-    let input_slider = document.querySelector(".input_slider");
+    let input_slider = document.querySelector("#input_slider");
     input_number.addEventListener('change', (e) => {
         //log.textContent = e.target.value;
         input_slider.value = e.target.value;
@@ -316,9 +406,9 @@ ${x}
         tog.addEventListener("click", function (e) {
                     if (e.target.checked) {
                         //tog.setAttribute("checked", "");
-                        anually.style.color = "green";
+                        anually.style.color = "black";
                         console.log("Yes");
-                        monthly.style.color = "black";
+                        monthly.style.color = "grey";
                         plan_big_div.innerHTML = "";
                         for (let i = 0; i < data_arr.length; i++) {
                             let details = data_arr[i]["options"];
@@ -358,9 +448,9 @@ ${x}
                         //tog.removeAttribute("checked");
                     }
                     else {
-                        anually.style.color = "black";
+                        anually.style.color = "grey";
                         console.log("No");
-                        monthly.style.color = "green";
+                        monthly.style.color = "black";
 
                         plan_big_div.innerHTML = "";
                         for (let i = 0; i < data_arr.length; i++) {
@@ -407,34 +497,6 @@ ${x}
 
 
     //add elements in business div
-    let business_details = {
-        "options": {
-            "Time tracking": true,
-            "Unlimited_prjects": true,
-            "Reporting": true,
-            "Timer_button": true,
-            "calendar integrations: google, outlook": true,
-            "billable_rates": true,
-            "budget_project": true,
-            "Invocing": true,
-            "task_management": true,
-            "activity_levels": true,
-            "apps_sites": true,
-            "screenshots": true,
-            "client_logins": true,
-            "paid_timeoff_tracking": true,
-            "payroll_employees": true,
-            "time_track_permissions": true,
-            "time_sync_jira": true,
-            "time_sync_gitlab": true,
-            "time_off_calender": true,
-            "work_schedule": true,
-            "team_personal_dashboard": false,
-        },
-        "id": 1,
-        "price": 7,
-        "plan_name": "Business"
-    }
 
     //  let details = business_details["options"];
     //  let business_div = document.querySelector("#business");
@@ -605,9 +667,9 @@ ${x}
         if (e.target.checked) {
             //tog.setAttribute("checked", "");
             let size = input_number.value || 1;
-            anually.style.color = "green";
+            anually.style.color = "black";
             console.log("Yes");
-            monthly.style.color = "black";
+            monthly.style.color = "grey";
             plan_big_div.innerHTML = "";
             for (let i = 0; i < data_arr.length; i++) {
                 let details = data_arr[i]["options"];
@@ -647,9 +709,9 @@ ${x}
             //tog.removeAttribute("checked");
         }
         else {
-            anually.style.color = "black";
+            anually.style.color = "grey";
             console.log("No");
-            monthly.style.color = "green";
+            monthly.style.color = "black";
             let size = input_number.value || 1;
             plan_big_div.innerHTML = "";
             for (let i = 0; i < data_arr.length; i++) {

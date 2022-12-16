@@ -35,14 +35,14 @@ input[type="checkbox"].toggle + label::before{
 input[type="checkbox"].toggle + label::after{
     content: "";
     position: absolute;
-    left: 115px;
+    left: 334px;
     width: 30px;
     height: 28px;
     background-color: rgba(10, 98, 10, 0.695);
     border-radius: 50px;
     margin-right: 5px;
     margin-left: 0px;
-    transition: 200ms ease-in-out;
+    transition: 500ms ease-in-out;
 }
 
 input[type="checkbox"].toggle:checked + label::after{
