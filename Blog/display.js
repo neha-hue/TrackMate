@@ -59,12 +59,17 @@ showData();
    
 function search(){
     let q=document.querySelector("#search").value;
-    let newData=data.filter(function(elem){
+    
+        let newData=data.filter(function(elem){
         
-        return elem.category.toLowerCase().includes(q.toLowerCase())
-    });
-    console.log(newData)
-    display(newData)
+            return elem.category.toLowerCase().includes(q.toLowerCase())
+        });
+        console.log(newData)
+        display(newData)
+
+   
+    
+    
 }
 
 function display(data){
@@ -85,8 +90,8 @@ function display(data){
         let author=document.createElement("p");
         author.innerText=elem.author;
         let category=document.createElement("p");
-        category.innerText=elem.category
-        div.append(image,title,text,date,author,category);
+        category.innerText=elem.category;
+        div.append(image,title,text,author,category);
         document.querySelector(".post-list").append(div)
     });
 }

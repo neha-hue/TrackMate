@@ -35,7 +35,7 @@ async function addData(e){
     });
     if(register_request.ok){
         alert("User has been created")
-        window.location.href="login.html"
+        window.location.href="userlogin.html"
     }
     else{
         alert("bad request")
