@@ -41,6 +41,22 @@
       "number": "677889",
       "password": "12345",
       "id": 5
+    },
+    {
+      "username": "neha jaiswal",
+      "lastname": "jaiswal",
+      "email": "nehajais@gmail.com",
+      "number": "56789",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "username": "diya jaiswal",
+      "lastname": "jaiswal",
+      "email": "diya@gmail.com",
+      "number": "67890",
+      "password": "5678",
+      "id": 7
     }
   ],
   "posts": [
