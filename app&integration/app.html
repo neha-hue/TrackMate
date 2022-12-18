@@ -433,7 +433,7 @@ color: white;
     <div id="head">
         <div id="navbar">
             <div>
-                <h2>TRACKMATE</h2>
+               <a href="../home/index.html">TRACKMATE</a>
                 <select name="EN" id="select">
                     <option value="">🌐 EN</option>
                     <option value="">Deutsch</option>
@@ -441,14 +441,14 @@ color: white;
             </div>
             <div>
             <a href="">Why Trackmate</a>
-            <a href="app.html">Apps & Integration</a>
-            <a href="">Pricing</a>
-            <a href="">Support</a>
-            <a href="">Blog</a>
+            <a href="../app&integration/app.html">Apps & Integration</a>
+            <a href="../pricing_page/pricingpage.html">Pricing</a>
+            <a href="../support/support.html">Support</a>
+            <a href="../blog/display.html">Blog</a>
             </div>
             <div>
-                <a href="">Log in</a>
-                <button class="sign">Sign Up</button>
+                <a href="../Blog/userlogin.html">Log in</a>
+                <button class="sign"><a href="../Blog/usersignup.html">Sign Up</a></button>
             </div>
          </div>
          <div id="top1">
@@ -605,7 +605,7 @@ color: white;
     let mycontainer = document.querySelector(".containermain");
    
       async function onedata(){
-         let data =  await fetch("http://localhost:3000/posts")
+         let data =  await fetch("http://localhost:3000/posts1")
          console.log(data)
          var jsonobj = await data.json();
          console.log(jsonobj)
