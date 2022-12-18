@@ -17,14 +17,14 @@
             </select>
         </div>
         <div>
-        <a href="">Why Trackmate</a>
-        <a href="app.html">Apps & Integration</a>
-        <a href="">Pricing</a>
-        <a href="">Support</a>
-        <a href="">Blog</a>
+        <a href="../home/index.html">Why Trackmate</a>
+        <a href="../app&integration/app.html">Apps & Integration</a>
+        <a href="../pricing_page/pricingpage.html">Pricing</a>
+        <a href="../support/support.html">Support</a>
+        <a href="../Blog/display.html">Blog</a>
         </div>
         <div>
-            <a href="">Log in</a>
+            <a href="../Blog/userlogin.html">Log in</a>
             <button id="sign">Sign Up</button>
         </div>
      </div>
@@ -269,4 +269,9 @@
             document.querySelector("#mid-cont").append(div)
         })
     }
+
+    let bu=document.querySelector("#sign")
+    bu.addEventListener("click",(event)=>{
+        window.location.href="usersignup.html"
+    })
 </script>
