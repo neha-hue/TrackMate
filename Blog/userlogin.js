@@ -27,6 +27,7 @@ fetch(url)
         
         if(flag){
             window.location.href="../home/index.html"
+            
         }
         else{
             alert("Invalid credentials")

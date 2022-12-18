@@ -22,7 +22,7 @@ const renderPosts = (posts) => {
         <img src=${post.image} class="card-img-top" alt="..."> 
          <h5 class="card-title">${post.title}</h5>
           <p class="card-text">${post.body}</p>
-          <p class="card-date">${post.date}</p>
+         
           <p class="card-author">${post.author}</p>
           <p class="card-category">${post.category}</p>
          <a href="#" class="card-link" id="edit-post">Edit</a>
@@ -63,7 +63,7 @@ postsList.addEventListener("click", (e) => {
         let bodyContent = parent.querySelector(".card-text").textContent;
         let authorContent = parent.querySelector(".card-author").textContent;
         let categoryContent=parent.querySelector(".card-category").textContent;
-        let dateContent=parent.querySelector(".card-date").textContent
+        // let dateContent=parent.querySelector(".card-date").textContent
         imageValue.value = imageContent;
         titleValue.value = titleContent;
         bodyValue.value = bodyContent;
@@ -74,6 +74,7 @@ postsList.addEventListener("click", (e) => {
     }
     btnSubmit.addEventListener("click", (e) => {
         e.preventDefault()
+        alert("added sucessfully")
         fetch(`${url}/${id}`, {
             method: "PATCH",
             headers: {
@@ -91,6 +92,7 @@ postsList.addEventListener("click", (e) => {
         })
             .then(res => res.json())
             .then(()=>window.location.reload());
+            
             addPostForm.reset();
     })
     //update the existing data
@@ -124,6 +126,7 @@ addPostForm.addEventListener('submit', (e) => {
         .then(data => {
             const dataArr = [];
             dataArr.push(data);
+            
             renderPosts(dataArr)
             
         })
