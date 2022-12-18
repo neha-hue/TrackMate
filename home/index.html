@@ -8,20 +8,26 @@
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container" >
-        <div id="cont2">
-            <div> <img src="https://tmetric.com/images/tmetric_logo_with_text.svg" alt=""> </div>
-            <div>
-                <p> <a href="#"></a>WhyTMetric</p>
-              <p>Apps & Integration</p>
-           <p>   Pricing</p>
-           <p><a href="support.html">Support </a> </p>
-               <p> Blog</p>
-            </div>
-                <div>
-                 <h3>log In</h3>
-                 <h3>SignUp</h3>
-                </div>
+    <div id="navbar">
+        <div>
+            <a class="firstanchor">TRACKMATE</a>
+            <select name="EN" id="select">
+                <option value="">🌐 EN</option>
+                <option value="">Deutsch</option>
+            </select>
+        </div>
+        <div>
+        <a href="">Why Trackmate</a>
+        <a href="app.html">Apps & Integration</a>
+        <a href="">Pricing</a>
+        <a href="">Support</a>
+        <a href="">Blog</a>
+        </div>
+        <div>
+            <a href="">Log in</a>
+            <button id="sign">Sign Up</button>
+        </div>
+     </div>
         </div>
         <div id="top" >
             <div>
@@ -40,18 +46,6 @@
 
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <div id="mid2" >
@@ -189,68 +183,78 @@
     <button> Start Free Trial</button>
     <p>Powered by  A software vendor with 20 years of experience.</p>
   </div>
-  <div id="descriptionPage">
-    <div>
-        <img src="https://tmetric.com/images/v3/tmetric_logo_with_text.svg" alt="">
-    </div>
+  
+    <div id="footer">
+        <div>
+           <h2>TRACKMATE</h2>
+        </div>
+        <div class="one">
+           <h3>Applications</h3>
+           <div>
+              <span><ion-icon name="desktop-outline"></ion-icon></span>
+              <p>Desktop</p>
+           </div>
+           <div>
+              <span><ion-icon name="logo-apple"></ion-icon></span>
+              <p>IOS</p>
+           </div>
+           <div>
+             <span><ion-icon name="logo-android"></ion-icon></span>
+              <p>Android</p>
+           </div>
+        </div>
+        <div class="two">
+           <h3>Browser Extensions</h3>
+           <div>
+              <span><ion-icon name="sync-circle-outline"></ion-icon></span>
+              <p>Chrome</p>
+           </div>
+           <div>
+              <span><ion-icon name="logo-firefox"></ion-icon></span>
+              <p>Firefox</p>
+           </div>
+           <div>
+              <span><ion-icon name="scan-circle-outline"></ion-icon></span>
+              <p>Opera</p>
+           </div>
+           <div>
+              <span><ion-icon name="list-circle-outline"></ion-icon></span>
+              <p>Safari</p>
+           </div>
+        </div>
+        <div>
+           <h3>Resources</h3>
+           <p>Solutions</p>
+           <p>Integrations</p>
+           <p>Help</p>
+           <p>Time tracker Comparision</p>
+           <p>Blog</p>
+        </div>
+        <div>
+           <h3>About</h3>
+           <p>About TRACKMATE</p>
+           <p>Terms of Service</p>
+           <p>Privacy Policy</p>
+           <p>Cookies Policy</p>
+        </div>
+       </div>
+      
+       <div id="end">
+        <div>
+          <p>Copyright Devart 2022</p> 
+        </div>
+        <div>
+           <span><ion-icon name="logo-youtube"></ion-icon></span>
+           <span><ion-icon name="logo-facebook"></ion-icon></span>
+           <span><ion-icon name="logo-twitter"></ion-icon></span>
+           <span><ion-icon name="logo-linkedin"></ion-icon></span>
+        </div>
+       </div>
 
-    <div>
-        <h3>Applications</h3>
-        <div>
-            <img src="https://tmetric.com/download" alt="">
-            <a href="">Desktop</a>
-        </div>
-        <div>
-            <img src="https://itunes.apple.com/us/app/tmetric/id1251407402" alt="">
-            <a href="">IOS</a>
-        </div>
-        <div>
-            <img src="https://play.google.com/store/apps/details?id=com.tmetric" alt="">
-            <a href="">Android</a>
-        </div>
-    </div>
-    <div>
-        <h3>Browser Extension</h3>
-        <div>
-            <img src="https://chrome.google.com/webstore/detail/tmetric-extension/ffijoclmniipjbhecddgkfpdafpbdnen" alt="">
-            <a href="">Chrome</a>
-        </div>
-        <div>
-            <img src="https://addons.mozilla.org/en-US/firefox/addon/tmetric-extension/" alt="">
-            <a href="">Firefox</a>
-        </div>
-        <div>
-            <img src="https://addons.opera.com/en/extensions/details/tmetric-extension/" alt="">
-            <a href="">Opera</a>
-        </div>
-        <div>
-            <img src="https://microsoftedge.microsoft.com/addons/detail/bkohhohbfioiffcejghnjljadblbifok" alt="">
-            <a href="">Edge</a>
-        </div>
-        <div>
-            <img src="https://apps.apple.com/app/tmetric-for-safari/id1483939427" alt="">
-            <a href="">Safari</a>
-        </div>
-    </div>
-    <div>
-        <h3>Resource</h3>
-        <p>Solution</p>
-        <p>Integration</p>
-        <p>Help</p>
-        <p>Time Trackers Comparison</p>
-        <p>Blog</p>
-    </div>
-    <div>
-        <h3>About</h3>
-        <p>About Tmetric</p>
-        <p>Terms of Service</p>
-        <p>Privacy Policy</p>
-        <p>Cookies Policy</p>
-    </div>
-</div>
 </body>
 </html>
-<script>  bag=[]
+<script>
+  bag=[]
     fetch(`data.json`).then((res)=>res.json()).then((data)=>{ bag=[...data]
         console.log(data)
         disTab(data)
