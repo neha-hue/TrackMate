@@ -1,6 +1,6 @@
 let postsList = document.querySelector(".post-list")
 let data=[]
-let url = " http://localhost:3000/posts";
+let url = " https://tmet-neha-hue.vercel.app/posts";
 // let output = ""
 // let renderPosts = (posts) => {
     
