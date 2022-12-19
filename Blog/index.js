@@ -10,7 +10,7 @@ const dates = new Date();
 console.log(dates)
 const authorValue = document.getElementById("author-value")
 const categoryValue=document.getElementById("select-tag")
-const url = " http://localhost:3000/posts";
+const url = " https://tmet-neha-hue.vercel.app/posts";
 
 let output = ""
 const renderPosts = (posts) => {

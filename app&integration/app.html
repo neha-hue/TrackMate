@@ -610,7 +610,7 @@ color: white;
     let mycontainer = document.querySelector(".containermain");
    
       async function onedata(){
-         let data =  await fetch("http://localhost:3000/posts1")
+         let data =  await fetch("https://tmet-neha-hue.vercel.app/posts1")
          console.log(data)
          var jsonobj = await data.json();
          console.log(jsonobj)
@@ -634,7 +634,7 @@ color: white;
     
 async function getdata(){
   try{
-    let res = await fetch("http://localhost:3000/data");
+    let res = await fetch("https://tmet-neha-hue.vercel.app/data");
     let out = await res.json();
     data = [...out]
     console.log(out)
@@ -667,7 +667,7 @@ getdata();
 
   async function twoData(){
   try{
-    let res = await fetch("http://localhost:3000/data2");
+    let res = await fetch("https://tmet-neha-hue.vercel.app/data2");
     let out = await res.json();
     data = [...out]
     console.log(out)
