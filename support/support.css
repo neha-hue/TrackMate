@@ -395,5 +395,57 @@ button{
     
 }
 
+#navbar{
+    display:flex;
+   justify-content: space-around;
+   width: 100%;
+   height:40px;
+   position: relative;
+   background-color: rgb(255,242,204); 
+   padding: 14px;
+   
+  }
+  #navbar>div{
+     display:flex;
+     font-size: 13px;
+  }
 
+#select{
+   height:35px;
+    margin-top: 15px;
+    border-style: none;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.firstanchor{
+font-size: 55px;
+font-family: sans-serif;
+text-decoration: none;
+cursor: pointer;
+}
+
+#navbar>div a{
+color: black;
+font-size: 15px;
+text-decoration: none;
+margin: 14px;
+margin-top:22px;
+font-weight: 500;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar>div a:hover{
+color: rgb(102, 102, 132);
+}
+#navbar button{
+height:45px;
+font-size: 16px;
+width:100px;
+background-color:  rgb(216, 250, 239);;
+border-radius: 12px;
+margin-top:10px;
+}
+#navbar button:hover{
+background-color: rgb(174, 174, 216);
+}
 
